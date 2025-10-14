@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 public class Exercises_Conditional {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -50,8 +51,9 @@ Test Data
 number: 4
 Expected Output:
 Wednesday*/
-        System.out.println("Enter number between 1 and 7");
-        int day =  input.nextInt();
+       Random generator = new Random();
+       int day = generator.nextInt(7)+1;
+        System.out.println("the generated number is " + day);
         switch (day){
             case 1:
              System.out.println("Sunday");
@@ -74,8 +76,7 @@ Wednesday*/
               case 7:
               System.out.println("Saturday");
               break;
-              default:
-              System.out.println("Invalid number please enter a number between 1 and 7");
+
         }
         System.out.println("----------------------------------------------------------------------");
 
