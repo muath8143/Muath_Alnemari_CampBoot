@@ -52,7 +52,7 @@ public class MyStart {
         System.out.println(username);
         System.out.println(username.equalsIgnoreCase(" muath alnemari "));
         */
-        //---------------------------------------------------------------------------------------------------
+        //------------------------------------------------------------------------------------------------------------------------------
         //Day2
 
 //Train with nawaf
@@ -108,7 +108,7 @@ public class MyStart {
         */
 //Train with nawaf
         /*
-        System.out.println("--------------------------------------- Welcome in academy games ---------------------------------------");
+        System.out.println("--------------------------------------- Welcome in academy games ------------------");
         System.out.println("Enter your choice (+ , / , *)");
         String addition = "+";
         String division = "/";
@@ -184,7 +184,7 @@ public class MyStart {
             System.out.println("Sorry the " + city + " is not present in our system");
         }
         */
-       /* System.out.println("-----------------------------------------------Welcome in challenges Tuwaiq academy-----------------------------------------------");
+       /* System.out.println("--------------------Welcome in challenges Tuwaiq academy---------------------------------");
         System.out.println("enter your number");
         int number = input.nextInt();
         if (number % 2 == 0) {
@@ -194,7 +194,76 @@ public class MyStart {
             System.out.println("thr number is odd");
            */
 // here some challenges from 2 to 6
+        //----------------------------------------------------------------------------------------------------------------------------------
+        //Day4
+       /* System.out.println("----------------------------------------Welcome in tasks system----------------------------------------");
+        int Id = 5;
+        int count = 5;
+
+       do {
+           System.out.println("Enter your id:");
+           Id = input.nextInt();
+           if (Id == 100) {
+               System.out.println("You have spesichal ");
+           }
 
 
+           switch (Id) {
+               case 1:
+                   System.out.println("you have 3 task");
+                   count = 0;
+                   break;
+
+               case 2:
+                   System.out.println("you have 2 task");
+                   count = 0;
+                   break;
+
+               case 3:
+                   System.out.println("you dont have any task");
+                   count = 0;
+                   break;
+
+               default:
+                   System.out.println("you id is wrong");
+                   count = count + 1;
+           }
+       } while (count>=5 && count <10);
+
+       if (count == 10) {
+           System.out.println("you try 5 times please again later");
+       }
+*/
+    /*
+     */
+        /*
+        int score = 0;
+        String sto ;
+        boolean flag = true;
+
+        do {
+
+            System.out.println("Enter your number ");
+            score = (score + input.nextInt());
+            sto=input.nextLine();
+
+            if ((sto.equalsIgnoreCase("stop"))){
+                flag = false;
+                break;
+            }
+
+        } while (flag);
+
+         */
+        int score = 0;
+        System.out.println("Enter your number: ");
+        int number = input.nextInt();
+        for (int i=1 ;i<=9;i++) {
+            score = i * number;
+            System.out.println(score);
+        }
     }
 }
+
+
+
