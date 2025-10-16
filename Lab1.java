@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 import java.lang.Integer;
 
@@ -10,13 +11,13 @@ public class Lab1 {
         System.out.println("Enter second number: ");
         int SecondNumber = input.nextInt();
         int sum = FirstNumber+SecondNumber;
-        System.out.println(FirstNumber+ " + "+ sum);
+        System.out.println(FirstNumber+ " + " +SecondNumber+" ="+ sum);
         int difference = FirstNumber-SecondNumber;
-        System.out.println(FirstNumber +" - " +SecondNumber+ "= "+ difference);
+        System.out.println(FirstNumber +" - " +SecondNumber+ " = "+ difference);
         int multiply = FirstNumber*SecondNumber;
-        System.out.println(FirstNumber +" * " +SecondNumber+ "= "+ multiply);
+        System.out.println(FirstNumber +" * " +SecondNumber+ " = "+ multiply);
         if (SecondNumber ==0){
-            System.out.println("the division on 0 = 1");
+            System.out.println("the division on 0 is unknown");
         }
         else{
             int div = FirstNumber/SecondNumber;
@@ -43,15 +44,10 @@ public class Lab1 {
         System.out.println("Enter the radius: ");
         double radius = input.nextDouble();
         double bi =3.14;
-        double area;
-        double seqradius=1;
-        double diameter=bi*(radius*2);
-        for(int i=1;i<=2;i++){
-            seqradius=radius*seqradius;
-        }
-        area = bi * seqradius;
+        double perimeter=bi*(radius*2);
+        double area= bi * (radius * radius);
         System.out.println("Area is = "+area);
-        System.out.println("Perimeter is = " + diameter);
+        System.out.println("Perimeter is = " + perimeter);
 
         //-------------------------------------------------------------------------------------------------------------
         System.out.println("-------------------------------------------------------------------------------------------------------------");
@@ -178,7 +174,7 @@ public class Lab1 {
 
         int min;
         int hours;
-        System.out.println("enter second number  ");
+        System.out.println("enter seconds number  ");
         int sec= input.nextInt();
         min = sec/60;
         hours=min/60;
@@ -227,7 +223,6 @@ public class Lab1 {
         int countpos =0;
         int countnig=0;
         int countzero = 0;
-        boolean flagend = true;
         System.out.println("Enter numbers ,, if you done write -1");
         do {
             much = input.nextInt();
@@ -256,8 +251,6 @@ public class Lab1 {
 
         System.out.println("enter intger number you want revers digit");
         int originalnumber = input.nextInt();
-        int reversenumber ;
-        int numberofdigit;
         String stringnumber = Integer.toString(originalnumber);
         StringBuilder string_number = new StringBuilder(stringnumber);
         System.out.println("The reverse number "+ originalnumber + " is "+string_number.reverse());
@@ -268,17 +261,20 @@ public class Lab1 {
         /*17*/
         System.out.println("Enter how much you want of numbers ");
         int countmuch = input.nextInt();
-        int big=0;
-        int small=0;
-        for (int i = 1; i <= countmuch; i++) {
+        System.out.println("Enter number");
+        int realnumber= input.nextInt();
+        int big=realnumber;
+        int small=realnumber;
+        for (int i = 1; i < countmuch; i++) {
             System.out.println("Enter number");
-            int realnumber= input.nextInt();
+            realnumber= input.nextInt();
             if(realnumber>big){
                 big = realnumber;
             }
-            else{
-                small=realnumber;
+                if(realnumber<small){
+                    small = realnumber;
             }
+
         }
         System.out.println("the large number is "+big);
         System.out.println("the small number is "+small);
@@ -293,7 +289,7 @@ input.nextLine();
         System.out.println("Enter a text");
         String serchtext = input.nextLine();
         for(int i=0;i<=serchtext.length()-1;i++){
-            if(serchtext.charAt(i)==cahrt.charAt(0)){
+            if(serchtext.toLowerCase(Locale.ROOT).charAt(i)==cahrt.charAt(0)){
                 conta++;
             }
         }
