@@ -73,7 +73,7 @@ public class Exercise_Array {
          //Sample Output:
          //New array after swapping the first and last elements: [40, 30, 20]
          int [] orignal = {20,40,100,90};
-         int [] swap = new int[4];
+         int [] swap = new int[orignal.length];
          for (int i=0;i< orignal.length;i++){
              if (i==0 ){
                  swap[i]= orignal[orignal.length-1];
@@ -127,10 +127,13 @@ public class Exercise_Array {
          boolean flag =true;
          if(testequality1.length==testequality2.length){
              for(int i=0;i<testequality1.length;i++){
-                 if (testequality1[i]==testequality2[i])
-                     flag=true;
-                 else
+                 if (testequality1[i]==testequality2[i]){}
+
+                 else{
                      flag=false;
+                     break;
+                 }
+
              }
              System.out.println(flag);
          }
