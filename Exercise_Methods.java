@@ -99,9 +99,9 @@ return small;
         String password=input.nextLine();
 
         if (checkPass(password))
-            System.out.println("password is valid");
+            System.out.println("password is valid: "+ password);
 
         else
-            System.out.println("password is not valid");
+            System.out.println("password is not valid: " +password);
     }
 }
