@@ -30,9 +30,7 @@ return small;
     //2 - Write a Java method that check if the entered number is negative or
     //positive or zero.
     public static void check (ArrayList<Integer> old){
-        ArrayList<Integer> newarr=new ArrayList<>();
-        newarr.addAll(old);
-        for (int n:newarr){
+        for (int n:old){
             if(n>0){
                 System.out.println("the number is positive");
             } else if (n<0) {
