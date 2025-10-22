@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Lab2 {
 //Q1--------------------------------------------------------------------------------------------------------------------
-    public static ArrayList<String> findall(ArrayList<String> find){
+    public static ArrayList<String> finddall(ArrayList<String> find){
     String LargeWord=find.getFirst();
     ArrayList<String>newarray=new ArrayList<>();
 
@@ -124,7 +124,7 @@ public class Lab2 {
         words.add("red");
         words.add("is");
         words.add("am");
-        System.out.println(findall(words));
+        System.out.println(finddall(words));
         System.out.println("-------------------------------------------------------------------------------------------------------------");
         //Q2--------------------------------------------------------------------------------------------------------------------
         int counter=0;

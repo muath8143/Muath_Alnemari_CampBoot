@@ -176,8 +176,10 @@ public class Lab1 {
         int hours;
         System.out.println("enter seconds number  ");
         int sec= input.nextInt();
-        min = sec/60;
-        hours=min/60;
+        hours=sec /3600;
+        min= (sec % 3600)/60;
+        int sece = sec % 60;
+
         System.out.println(hours+":"+min+":"+sec);
 
 //-------------------------------------------------------------------------------------------------------------

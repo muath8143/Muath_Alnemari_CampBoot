@@ -149,6 +149,7 @@ left to right or right to left. */
         word = input.nextLine();
         for(int i =word.length()-1;i>=0;i--){
             finalword = finalword+ word.charAt(i);
+            System.out.println(finalword);
         }
         if (word.equalsIgnoreCase(finalword)) {
             System.out.println(word+ " is a palindrome.");
