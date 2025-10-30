@@ -6,7 +6,7 @@ public class Main {
         Scanner input=new Scanner(System.in);
         boolean flag=true;
 
-        System.out.println("----------------------------------------------------------------------------------");
+
         while (flag){
             System.out.println();
             System.out.println("----------------------------------------------------------------------------------");
